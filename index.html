@@ -16,6 +16,8 @@
 
   <nav class="menu page__menu">
     <span class="menu__logo">WM</span>
+    <i class="fas fa-bars menu__burger-icon"></i>
+    <i class="fas fa-times menu__burger-icon menu__burger-icon--display-none"></i>
     <ul class="menu__list">
       <li class="menu__item">
         <a href="#" class="menu__link">Wydawnictwo</a>
@@ -39,14 +41,14 @@
 
   <main class="main">
     <form action="" class="form main__form">
+      <div class="form__user-type">
+        <input name="typeOfUser" type="radio" value="firm" id="userFirm" class="form__input-checkbox">
+        <label for="userFirm" class="form__option-btn form__option-btn--change-size">Firma</label>
 
-      <input name="typeOfUser" type="radio" value="firm" id="userFirm" class="form__input-checkbox">
-      <label for="userFirm"
-        class="form__option-btn form__option-btn--change-size form__option-btn--float-left">Firma</label>
-
-      <input name="typeOfUser" type="radio" value="individual" checked id="userIndividual" class="form__input-checkbox">
-      <label for="userIndividual"
-        class="form__option-btn form__option-btn--change-size form__option-btn--float-right">Osoba prywatna</label>
+        <input name="typeOfUser" type="radio" value="individual" checked id="userIndividual"
+          class="form__input-checkbox">
+        <label for="userIndividual" class="form__option-btn form__option-btn--change-size">Osoba prywatna</label>
+      </div>
 
       <label for="name" class="form__label">Imię</label>
       <input type="text" id="name" required class="form__input">
@@ -118,6 +120,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
