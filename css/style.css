@@ -225,7 +225,15 @@ font-family: 'Montserrat', sans-serif; */
   }
 }
 
-@media (hover: none) and (pointer: coarse) and (max-width:885px) {
+@media (max-width:885px) {
+  .main__form {
+    width: 100%;
+  }
+
+  .main__image {
+    display: none;
+  }
+
   .footer {
     display: block;
   }
@@ -281,5 +289,3 @@ font-family: 'Montserrat', sans-serif; */
   }
 
 }
-
-@media (hover: none) and (pointer: coarse) and (max-width:665px) {}
