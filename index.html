@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WM</title>
+  <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700,800&display=swap&subset=latin-ext"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/25ea776cfb.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="page">
+
+  <nav class="menu page__menu">
+    <span class="menu__logo">WM</span>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="#" class="menu__link">Wydawnictwo</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Oferta</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Zostań autorem</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="titles">
+    <h2 class="titles__title">Dołącz do największej bazy książek poświęconych biznesowi w IT.</h2>
+    <h2 class="titles__title">Zarejestruj się i skorzystaj z darmowego tygodnia próbnego</h2>
+  </div>
+
+  <main class="main">
+    <form action="" class="form main__form">
+
+      <input name="typeOfUser" type="radio" value="firm" id="userFirm" class="form__input-checkbox">
+      <label for="userFirm"
+        class="form__option-btn form__option-btn--change-size form__option-btn--float-left">Firma</label>
+
+      <input name="typeOfUser" type="radio" value="individual" checked id="userIndividual" class="form__input-checkbox">
+      <label for="userIndividual"
+        class="form__option-btn form__option-btn--change-size form__option-btn--float-right">Osoba prywatna</label>
+
+      <label for="name" class="form__label">Imię</label>
+      <input type="text" id="name" required class="form__input">
+
+      <label for="surname" class="form__label">Nazwisko</label>
+      <input type="text" id="surname" required class="form__input">
+
+      <label for="email" class="form__label">E-mail</label>
+      <input type="email" id="email" required class="form__input">
+
+      <label for="password" class="form__label">Hasło</label>
+      <input type="password" id="password" required class="form__input">
+
+      <span class="form__requires">Min. 6 znaków w tym min. 1 cyfra i 1 znak specjalny</span>
+
+      <div class="firm-data form__firm-data form__firm-data--display-none">
+
+        <label for="firm-name" class="form__label">Nazwa firmy</label>
+        <input type="text" id="firm-name" required class="form__input">
+
+        <p class="form__label">Ilość pracowników</p>
+
+        <input name="employeesNumber" type="radio" value="1" id="employeesOpt1" class="form__input-checkbox">
+        <label for="employeesOpt1" class="form__option-btn">1-5</label>
+
+        <input name="employeesNumber" type="radio" value="2" id="employeesOpt2" class="form__input-checkbox">
+        <label for="employeesOpt2" class="form__option-btn">6-15</label>
+
+        <input name="employeesNumber" type="radio" value="3" checked id="employeesOpt3" class="form__input-checkbox">
+        <label for="employeesOpt3" class="form__option-btn">16-50</label>
+
+        <input name="employeesNumber" type="radio" value="4" id="employeesOpt4" class="form__input-checkbox">
+        <label for="employeesOpt4" class="form__option-btn">51+</label>
+      </div>
+
+      <p class="form__info">Pola wymagane</p>
+
+      <input type="checkbox" required value="regulations" id="terms-accept" class="form__input-checkbox-accept">
+      <label for="terms-accept" class="form__terms-accept">Akceptuję regulamin serwisu*</label>
+
+      <input type="checkbox" value="regulations" id="newsletter-accept" class="form__input-checkbox-accept">
+      <label for="newsletter-accept" class="form__terms-accept">Chcę dołączycz do newslettera</label>
+
+      <button class="form__btn">Zarejestrój się</button>
+
+    </form>
+
+    <div class="image main__image">
+      <img src="/img/3.png" alt="" class="image__img">
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <div class="footer__links">
+      <a href="" class="footer__link">Regulamin serwisu</a>
+      <a href="" class="footer__link">Polityka prywatnośći</a>
+      <a href="" class="footer__link">Zniżki edukacyjne</a>
+    </div>
+
+    <div class="social footer__social">
+      <i class="fab fa-facebook-f social__facebook"></i>
+      <i class="fab fa-linkedin-in social__linkedin"></i>
+      <i class="fab fa-instagram social__instagram"></i>
+      <i class="fab fa-youtube social__youtube"></i>
+    </div>
+
+  </footer>
+
+  <script src="/script/script.js"></script>
+</body>
+
+</html>
